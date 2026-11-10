@@ -111,7 +111,7 @@ h3 { font-size: 18px; font-weight: 600; }
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url("images/hero-port.png") center / cover no-repeat;
+  background: url("hero-port.png") center / cover no-repeat;
 }
 .hero__bg::after {
   content: "";
