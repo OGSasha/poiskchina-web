@@ -1,303 +1,458 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ПОИСК CHINA — цепочка поставок Китай–Россия под ключ</title>
-<meta name="description" content="Управление цепочками поставок Китай — Россия: поиск и аудит фабрик, образцы, производство, двойной контроль качества, логистика, таможня и склады в двух странах.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='9' y='9' width='14' height='14' rx='3' transform='rotate(45 16 16)' fill='%23C6A15B'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POISKCHINA — Производство и поставка из Китая в Россию</title>
+  <meta name="description" content="Производство и поставка из Китая в Россию: поиск и аудит фабрики, производство, контроль качества, доставка и прозрачная смета. Офисы в Шэньчжэне и Санкт-Петербурге.">
+  <meta name="theme-color" content="#07101d">
+  <meta property="og:title" content="POISKCHINA — Производство и поставка из Китая в Россию">
+  <meta property="og:description" content="Одна команда для производства, контроля качества, доставки и прозрачной сметы.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-port.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
 
-<header class="nav" id="nav">
-  <div class="container nav__inner">
-    <a class="brand" href="#top" aria-label="Восточный Мост">
-      <span class="brand__mark"></span>
-      <span class="brand__text">
-        <span class="brand__name">ПОИСК CHINA</span>
-        <span class="brand__tag">Supply Chain Management</span>
-      </span>
+<nav class="nav" id="nav" aria-label="Основная навигация">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" aria-label="POISKCHINA — на главную">
+      <img src="images/logo.png" alt="" class="brand-logo" width="134" height="160">
+      <span><b>POISKCHINA</b><small>Китай · Россия · Под ключ</small></span>
     </a>
-    <nav class="nav__links" id="navLinks">
-      <a href="#about">О компании</a>
-      <a href="#process">Процесс</a>
-      <a href="#advantages">Преимущества</a>
-      <a href="#model">Модель</a>
-      <a href="#geography">География</a>
-      <a class="btn btn--gold nav__cta" href="#contacts">Обсудить проект</a>
-    </nav>
-    <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Сервис</a>
+      <a href="#assurance">Гарантии</a>
+      <a href="#cases">Сценарии</a>
+      <a href="#commercial">Стоимость</a>
+      <a href="#network">Команда</a>
+      <a href="#contact" class="nav-cta">Получить расчёт</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
+  </div>
+</nav>
+
+<!-- 1. ПЕРВЫЙ ЭКРАН -->
+<header class="hero" id="top">
+  <div class="hero-bg"><img src="images/hero-port.jpg" alt="Контейнерный порт — международная цепочка поставок" width="1536" height="937" fetchpriority="high"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span>Производство · Качество · Доставка · Смета</span>
+        <h1>Производство и поставка из Китая в Россию — <span class="gold-grad">с контролем качества</span></h1>
+        <p class="sub">От поиска и аудита фабрики до производства, проверки, доставки и послепродажного сопровождения — одна команда и прозрачная смета.</p>
+        <div class="hero-actions">
+          <a href="#inquiry-form" class="btn btn-gold">Получить расчёт проекта <span aria-hidden="true">→</span></a>
+          <a href="#assurance" class="btn btn-ghost">Посмотреть процесс</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Состав услуги">
+        <span class="panel-label">Что вы получаете</span>
+        <h2>Один проектный интерфейс</h2>
+        <ul class="check-list">
+          <li><span>01</span>Производство по подтверждённому образцу</li>
+          <li><span>02</span>Три рубежа контроля качества</li>
+          <li><span>03</span>Доставка и исполнение в России</li>
+          <li><span>04</span>Товар, сервис и расходы третьих сторон — раздельно</li>
+        </ul>
+        <p class="hero-panel-note">Без координации множества подрядчиков с вашей стороны.</p>
+      </aside>
+    </div>
+    <div class="fact-strip" aria-label="Факты о компании">
+      <div class="fact"><strong>с 2022</strong><span>работаем на маршруте Китай — Россия</span></div>
+      <div class="fact"><strong>2</strong><span>компании и локальные команды</span></div>
+      <div class="fact"><strong>3</strong><span>рубежа контроля качества</span></div>
+      <div class="fact"><strong>7</strong><span>городов складской сети</span></div>
+    </div>
   </div>
 </header>
 
-<main id="top">
-
-  <section class="hero">
-    <div class="hero__bg" role="img" aria-label="Контейнерный порт"></div>
-    <div class="container hero__content reveal">
-      <p class="eyebrow">Управление цепочками поставок</p>
-      <h1>Цепочка поставок <span class="gold">Китай — Россия</span> под ключ</h1>
-      <p class="lead">От идеи продукта до выдачи со склада в России: поиск и аудит фабрик, образцы, производство, двойной контроль качества, логистика и таможня — в одном окне.</p>
-      <div class="hero__actions">
-        <a class="btn btn--gold btn--lg" href="#contacts">Обсудить проект</a>
-        <a class="btn btn--ghost btn--lg" href="#process">Как мы работаем</a>
-      </div>
+<main id="main">
+<!-- 2. СЕРВИС -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">01 · Сервис</span>
+      <h2>Не просто перевозка или поиск поставщика</h2>
+      <p>Управляем конкретным заказом: требованиями, фабрикой, производством, качеством, документами и доставкой. Подходит брендам, дистрибьюторам и производственным предприятиям.</p>
     </div>
-    <div class="hero__stats">
-      <div class="container hero__stats-row">
-        <div class="stat"><p class="stat__value">с 2022</p><p class="stat__label">управляем цепочками поставок</p></div>
-        <div class="stat"><p class="stat__value">7 складов</p><p class="stat__label">в Китае и в России</p></div>
-        <div class="stat"><p class="stat__value">2 компании</p><p class="stat__label">Шэньчжэнь и Санкт-Петербург</p></div>
-        <div class="stat"><p class="stat__value">2 проверки</p><p class="stat__label">качества до выхода груза из Китая</p></div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section" id="about">
-    <div class="container split">
-      <div class="split__text reveal">
-        <p class="eyebrow">О компании</p>
-        <h2>Мы управляем цепочкой поставок, а не просто везём груз</h2>
-        <p>«ПОИСК CHINA» — оператор полного цикла: берём на себя весь путь от идеи продукта до подписания на складе в России. Клиенту не нужно согласовывать фабрику, инспекции, склад, логистику и таможню по отдельности — за заказ отвечает один менеджер.</p>
-        <p>Работаем с мая 2022 года. Доход компании — прозрачный сервисный сбор, а не скрытая наценка на товар.</p>
-        <ul class="checklist">
-          <li>Офис в Шэньчжэне — снабжение и контроль производства</li>
-          <li>Офис в Санкт-Петербурге — договор и расчёты в рублях</li>
-          <li>Команда в Китае ежедневно работает с фабриками по всей стране</li>
+    <div class="path-grid">
+      <article class="path path-gold reveal">
+        <span class="path-label">Путь A · Готовая продукция</span>
+        <h3>Кастомизация и доставка продукции</h3>
+        <p>Для брендов, торговых компаний и дистрибьюторов, которым нужен продукт под собственные требования.</p>
+        <ul>
+          <li>От идеи, чертежа или образца до технического пакета</li>
+          <li>Подбор фабрики, образцы, BOM и эталоны качества</li>
+          <li>Производство, маркировка, доставка и приёмка в России</li>
         </ul>
-      </div>
-      <div class="split__media reveal">
-        <img src="factory.png" alt="Производственный цех по пошиву рюкзаков" loading="lazy">
-        <div class="badge">
-          <span class="badge__label">Производственный контур</span>
-          <span class="badge__value">Шэньчжэнь, Китай</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--surface" id="process">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="eyebrow">Как мы работаем</p>
-        <h2>Один менеджер ведёт заказ от эскиза до подписи</h2>
-        <p class="section__sub">Восемь контролируемых этапов, закреплённых в договоре. Статус заказа прозрачен на каждом шаге.</p>
-      </div>
-      <div class="steps">
-        <article class="card step reveal"><p class="step__num">01</p><h3>Анализ задачи</h3><p>Российский менеджер лично фиксирует требования к продукту, бюджету и срокам.</p></article>
-        <article class="card step reveal"><p class="step__num">02</p><h3>Дизайн и образцы</h3><p>Превращаем идею в спецификацию и подтверждённый образец до запуска серии.</p></article>
-        <article class="card step reveal"><p class="step__num">03</p><h3>Подбор фабрики</h3><p>Аудит по чек-листу: лицензии, реальные мощности, опыт, прозрачная смета.</p></article>
-        <article class="card step reveal"><p class="step__num">04</p><h3>Контракт и запуск</h3><p>Договор с российской компанией и с фабрикой: качество, сроки, условия оплаты.</p></article>
-        <article class="card step reveal"><p class="step__num">05</p><h3>Контроль производства</h3><p>Выборочные проверки прямо на линии: сроки и качество под наблюдением.</p></article>
-        <article class="card step reveal"><p class="step__num">06</p><h3>Проверка на складе</h3><p>Вторая проверка на складах в Гуанчжоу, Шэньяне, Шанхае и Шэньчжэне.</p></article>
-        <article class="card step reveal"><p class="step__num">07</p><h3>Логистика и таможня</h3><p>Консолидация, экспортное оформление и перевозка в Россию — под нашим контролем.</p></article>
-        <article class="card step reveal"><p class="step__num">08</p><h3>Выдача в России</h3><p>Склады в Москве, Санкт-Петербурге и Екатеринбурге, доставка до двери.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="quality">
-    <div class="container split">
-      <div class="split__media reveal">
-        <img src="warehouse.png" alt="Инспектор проверяет груз на складе" loading="lazy">
-      </div>
-      <div class="split__text reveal">
-        <p class="eyebrow">Контроль качества</p>
-        <h2>Две проверки в Китае — до того, как груз пересечёт границу</h2>
-        <p>Если брак обнаружен до экспорта, фабрика устраняет его за свой счёт. Вы не оплачиваете международную пересылку чужих ошибок.</p>
-        <ul class="checklist checklist--circle">
-          <li>Инспекторы на фабрике во время производства — контроль сроков и качества</li>
-          <li>Повторная выборочная проверка на складе консолидации перед отгрузкой</li>
-          <li>Несоответствия устраняются фабрикой до экспорта, а не после прибытия в Россию</li>
+        <a href="#inquiry-form" class="text-link" data-service="Кастомизация и доставка продукции">Рассчитать этот путь <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="path path-blue reveal">
+        <span class="path-label">Путь B · Сырьё и компоненты</span>
+        <h3>Поставка сырья и комплектующих</h3>
+        <p>Для российских производителей, которым важны спецификации, стабильность партий и ритмичность поставок.</p>
+        <ul>
+          <li>Поиск материалов и компонентов по техническим требованиям</li>
+          <li>Образцы, тесты, контроль состава и постоянства партий</li>
+          <li>Консолидация, документы и трансграничная доставка</li>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--surface" id="advantages">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="eyebrow">Преимущества</p>
-        <h2>Почему с нами надёжнее, чем с посредником</h2>
-        <p class="section__sub">Мы не перепродаём товар и не зарабатываем на разнице цен. Наша модель — профессиональное управление цепочкой поставок за прозрачный сервисный сбор.</p>
-      </div>
-      <div class="grid-3">
-        <article class="card feature reveal">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3>Не посредник</h3>
-          <p>Зарабатываем прозрачный сервисный сбор, а не скрытую наценку на товар.</p>
-        </article>
-        <article class="card feature reveal">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M3 21h18M5 21V10l4 2.5V10l4 2.5V4h6v17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3>Цены фабрик напрямую</h3>
-          <p>Долгосрочные контракты и объединение заказов дают условия ниже рыночных.</p>
-        </article>
-        <article class="card feature reveal">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M7 3h8l4 4v14H7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12h6M9 16h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          <h3>Расчёты в рублях</h3>
-          <p>Договор и оплата с российским юридическим лицом в Санкт-Петербурге.</p>
-        </article>
-        <article class="card feature reveal">
-          <svg viewBox="0 0 24 24" class="icon"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 4.5V3h6v1.5M9 13l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3>Контроль на месте</h3>
-          <p>Сотрудники в Китае ежедневно выезжают на производства по всей стране.</p>
-        </article>
-        <article class="card feature reveal">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          <h3>Продукция и сырьё</h3>
-          <p>Мы поставляем готовую продукцию производителям в России, а также сырьё.</p>
-        </article>
-        <article class="card feature reveal">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M3 21V9l9-5 9 5v12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M7 21v-6h10v6M7 15h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          <h3>Склады в двух странах</h3>
-          <p>Хранение и консолидация до отгрузки в Китае и после прибытия в России.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="model">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="eyebrow">Финансовая модель</p>
-        <h2>Прозрачная экономика заказа</h2>
-        <p class="section__sub">Счёт клиента складывается из трёх понятных частей. Все суммы фиксируются в договоре до старта работ.</p>
-      </div>
-      <div class="formula">
-        <article class="card formula__card reveal">
-          <p class="formula__letter">F</p>
-          <h3>Стоимость товара</h3>
-          <p>Оплачивается по цене фабрики — без наценок и скрытых комиссий.</p>
-        </article>
-        <span class="formula__plus" aria-hidden="true">+</span>
-        <article class="card formula__card formula__card--gold reveal">
-          <p class="formula__letter gold">S</p>
-          <h3>Сервисный сбор</h3>
-          <p>Наш доход: управление заказом от идеи до выдачи. Фиксируется в договоре.</p>
-        </article>
-        <span class="formula__plus" aria-hidden="true">+</span>
-        <article class="card formula__card reveal">
-          <p class="formula__letter">P</p>
-          <h3>Фактические расходы</h3>
-          <p>Логистика, таможня, сертификация и страхование — по подтверждающим документам.</p>
-        </article>
-      </div>
-      <p class="note reveal">
-        <svg viewBox="0 0 24 24" class="icon icon--sm"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 11v5M12 8v.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        Просроченное хранение оплачивается по фактической ставке аренды склада — без дополнительных наценок.
-      </p>
-    </div>
-  </section>
-
-<section class="section section--surface" id="categories">
-  <div class="container">
-    <div class="section__head reveal">
-      <p class="eyebrow">Что мы поставляем</p>
-      <h2>От готового продукта до сырья для производства</h2>
-    </div>
-    <div class="cats">
-      <article class="cats__main reveal">
-        <img src="backpack.png" alt="Туристический рюкзак" loading="lazy">
-        <div class="cats__main-text">
-          
-        </div>
+        <a href="#inquiry-form" class="text-link" data-service="Поставка сырья и комплектующих">Рассчитать этот путь <span aria-hidden="true">→</span></a>
       </article>
-      <article class="card cats__card reveal">
-        <svg viewBox="0 0 24 24" class="icon"><path d="M12 3l9 5-9 5-9-5 9-5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 13l9 5 9-5M3 17l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" transform="translate(0 -1)"/></svg>
-        <h3>Сырьё и комплектующие</h3>
-        <p>Сырьё от проверенных фабрик — для производителей в России.</p>
-      </article>
+    </div>
+
+    <div class="fit-line reveal">
+      <strong>Особенно полезно, если:</strong>
+        <span>есть только идея или референс</span>
+        <span>заказ распределён между фабриками</span>
+        <span>нужна стабильность повторных партий</span>
+    </div>
+
+    <div class="value-band reveal">
+      <div><span class="value-num">01</span><h3>Единые требования</h3><p>Клиент, проектная команда и фабрика работают с одной версией образца, BOM и критериев приёмки.</p></div>
+      <div><span class="value-num">02</span><h3>Проверяемые записи</h3><p>Аудит, инспекции, фото, изменения и отклонения фиксируются в проектном досье.</p></div>
+      <div><span class="value-num">03</span><h3>Прозрачная смета</h3><p>Стоимость товара, сервисный сбор и расходы третьих сторон показываются раздельно.</p></div>
     </div>
   </div>
 </section>
 
-  <section class="section" id="geography">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="eyebrow">География</p>
-        <h2>Инфраструктура в двух странах</h2>
+<!-- 3. ПРОЕКТНОЕ ОБЕСПЕЧЕНИЕ -->
+<section class="section tint" id="assurance">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">02 · Проектное обеспечение</span>
+      <h2>От требований до закрытия отклонений</h2>
+      <p>Каждый этап заканчивается подтверждением и записью. Следующий этап начинается только после выполнения условий предыдущего.</p>
+    </div>
+
+    <ol class="process-line reveal">
+      <li><span class="process-no">01</span><h3>Требования</h3><p>Продукт, объём, целевая цена, сроки и критерии приёмки.</p><strong>Результат: подтверждённое ТЗ</strong></li>
+      <li><span class="process-no">02</span><h3>Фабрика и образец</h3><p>Поиск, аудит, тесты, договор и письменное утверждение образца.</p><strong>Результат: эталон и BOM</strong></li>
+      <li><span class="process-no">03</span><h3>Производство</h3><p>Материалы, первая деталь, инспекции и контроль готовой партии.</p><strong>Результат: отчёт качества</strong></li>
+      <li><span class="process-no">04</span><h3>Перепроверка</h3><p>Склад в Китае, выборка, упаковка, маркировка и документы.</p><strong>Результат: готовность к отгрузке</strong></li>
+      <li><span class="process-no">05</span><h3>Доставка в РФ</h3><p>Трекинг, таможня, склад, доставка, приёмка и сервис.</p><strong>Результат: закрытие заказа</strong></li>
+    </ol>
+    <div class="context-cta reveal"><span>Нужен такой план для вашего заказа?</span><a href="#inquiry-form" class="text-link" data-service="Комплексное управление заказом">Получить план проекта →</a></div>
+
+    <div class="quality-grid">
+      <figure class="quality-media reveal">
+        <img src="images/quality.jpg" alt="Инспектор проверяет продукцию на производстве" width="1400" height="854" loading="lazy">
+        <figcaption><strong>3 рубежа контроля</strong><span>До отгрузки и после прибытия</span></figcaption>
+      </figure>
+      <div class="quality-content reveal">
+        <span class="mini-kicker">Качество с записью, а не обещание</span>
+        <h3>Проблемы выявляем до границы</h3>
+        <div class="gate"><span>1</span><div><h4>Производство и готовая партия</h4><p>Материалы, первая деталь, процесс и готовая продукция.</p><small>Записи: инспекции, исправления, чек-листы</small></div></div>
+        <div class="gate"><span>2</span><div><h4>Перепроверка перед отгрузкой</h4><p>Сверка с эталоном, выборка, упаковка и маркировка.</p><small>Записи: приёмка, фото и видео</small></div></div>
+        <div class="gate"><span>3</span><div><h4>Проверка после прибытия</h4><p>Количество, места, внешняя упаковка и отклонения.</p><small>Записи: акт приёмки и закрытие замечаний</small></div></div>
+        <a href="#inquiry-form" class="text-link" data-service="План контроля качества">Запросить план контроля →</a>
       </div>
-      <div class="geo-banner reveal">
-        <img src="rail.png" alt="Грузовой поезд с контейнерами" loading="lazy">
-        <p class="geo-banner__text">2 страны — 7 складов — 1 договор</p>
-      </div>
-      <div class="geo-columns">
-        <div class="card geo-card reveal">
-          <h3 class="geo-card__title">КИТАЙ</h3>
-          <ul>
-            <li>Шэньчжэнь — головной офис и команда снабжения</li>
-            <li>Гуанчжоу — склад консолидации и проверки</li>
-            <li>Шэньян — склад консолидации и проверки</li>
-            <li>Шанхай — склад консолидации и проверки</li>
-            <li>Шэньчжэнь — склад консолидации и проверки</li>
-          </ul>
+    </div>
+
+    <div class="compliance-grid">
+      <div class="four-flows reveal">
+        <span class="mini-kicker">Комплаенс</span>
+        <h3>Четыре потока — одно досье заказа</h3>
+        <p>Дважды проверяем требования: на этапе решения и перед отгрузкой. Изменение продукта, материала или бренда запускает повторную проверку.</p>
+        <div class="flow-visual" aria-label="Договор, товар, оплата и документы связаны в одном досье">
+          <span>Договор</span><span>Товар</span><span>Оплата</span><span>Документы</span>
+          <strong>Одно досье<br>заказа</strong>
         </div>
-        <div class="card geo-card reveal">
-          <h3 class="geo-card__title">РОССИЯ</h3>
-          <ul>
-            <li>Санкт-Петербург — офис, договор и расчёты в рублях</li>
-            <li>Москва — склад выдачи и доставка по городу</li>
-            <li>Санкт-Петербург — склад выдачи и доставка</li>
-            <li>Екатеринбург — склад выдачи и доставка</li>
-            <li>Доставка в любой город России транспортной компанией</li>
-          </ul>
+        <p class="fine-print">EAC, HS-код, русская маркировка и документы определяются по категории товара и действующим правилам. Мы координируем процесс, не подменяя установленную законом ответственность участников.</p>
+      </div>
+      <div class="risk-board reveal">
+        <span class="mini-kicker">Карта рисков</span>
+        <h3>Уровень виден текстом, не только цветом</h3>
+        <div class="risk-scroll" tabindex="0" aria-label="Таблица рисков; на маленьком экране доступна горизонтальная прокрутка">
+          <table>
+            <caption>Влияние и вероятность определяются для конкретного заказа</caption>
+            <thead><tr><th scope="col">Влияние</th><th scope="col">Низкая вероятность</th><th scope="col">Средняя</th><th scope="col">Высокая</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Высокое</th><td>—</td><td><span class="risk high"><b>!</b>Высокий · поставщик</span></td><td><span class="risk high"><b>!</b>Высокий · качество</span><span class="risk high"><b>!</b>Высокий · документы</span></td></tr>
+              <tr><th scope="row">Среднее</th><td>—</td><td><span class="risk medium"><b>≈</b>Средний · сроки</span></td><td><span class="risk medium"><b>≈</b>Средний · ущерб</span></td></tr>
+              <tr><th scope="row">Низкое</th><td><span class="risk controlled"><b>✓</b>Регламент · оплата</span></td><td><span class="risk controlled"><b>✓</b>Регламент · ИС</span></td><td>—</td></tr>
+            </tbody>
+          </table>
         </div>
+        <div class="risk-key"><span><b>!</b> Превентивный контроль</span><span><b>≈</b> Мониторинг</span><span><b>✓</b> Регламент</span></div>
       </div>
-    </div>
-  </section>
-
-  <section class="cta" id="contacts">
-    <div class="container cta__inner reveal">
-      <p class="eyebrow">Начать работу</p>
-      <h2>Расскажите о своём продукте — рассчитаем стоимость и сроки</h2>
-      <p class="cta__sub">Ответим в течение рабочего дня. Консультация и расчёт — бесплатно.</p>
-      <a class="btn btn--gold btn--lg" href="mailto:info@poiskchina.com">Оставить заявку</a>
-      <div class="cta__contacts">
-        <a href="mailto:info@poiskchina.com" class="contact">
-          <svg viewBox="0 0 24 24" class="icon icon--sm"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5L12 13l8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          info@poiskchina.com
-        </a>
-        <a href="tel:+79819588868" class="contact">
-          <svg viewBox="0 0 24 24" class="icon icon--sm"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          +7 (981) 958-88-68
-        </a>
-        <a href="https://t.me/PoiskChina_info" class="contact" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" class="icon icon--sm"><path d="M22 3L2 11l6 2.5M22 3l-3.5 18-8-7.5M22 3L8 13.5v6l3-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          @PoiskChina_info
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__top">
-      <a class="brand" href="#top">
-        <span class="brand__mark"></span>
-        <span class="brand__name brand__name--footer">ООО «ВостокСнаб»</span>
-      </a>
-      <nav class="footer__links">
-        <a href="#about">О компании</a>
-        <a href="#process">Процесс</a>
-        <a href="#advantages">Преимущества</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-    </div>
-    <div class="footer__divider"></div>
-    <div class="footer__bottom">
-      <p>© 2022–2026 ООО «ВостокСнаб». Управление цепочками поставок Китай — Россия.</p>
-      <p>ООО «ВостокСнаб», Санкт-Петербург</p>
     </div>
   </div>
+</section>
+
+<!-- 4. СЦЕНАРИИ И ДОКАЗАТЕЛЬСТВА -->
+<section class="section" id="cases">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">03 · Сценарии и доказательства</span>
+      <h2>Как выглядит проверяемый результат проекта</h2>
+      <p>Ниже — демонстрационные сценарии состава работ, а не исторические кейсы или заявление о прошлых результатах. Сроки и бюджет подтверждаются индивидуальным расчётом.</p>
+    </div>
+
+    <div class="case-grid">
+      <article class="case-card reveal">
+        <div class="case-photo"><img src="images/quality.jpg" alt="Иллюстрация сценария: контроль кастомной продукции" width="1400" height="854" loading="lazy"><span>Сценарий 01</span></div>
+        <div class="case-body">
+          <span class="case-type">Готовая продукция</span>
+          <h3>Кастомный продукт по референсу</h3>
+          <dl>
+            <div><dt>Сложность</dt><dd>Перевести идею и референсы в единый технический пакет.</dd></div>
+            <div><dt>Контроль</dt><dd>Аудит → образец → первая деталь → выборка готовой партии.</dd></div>
+            <div><dt>Доказательства</dt><dd>Утверждённый образец, BOM, чек-листы, фото и отчёт.</dd></div>
+          </dl>
+          <p class="case-result"><strong>Критерий результата:</strong> партия соответствует зафиксированному образцу и стандартам приёмки.</p>
+          <p class="case-meta">Сроки: после аудита и образца · Смета: товар + сервис + тесты и логистика</p>
+        </div>
+      </article>
+
+      <article class="case-card reveal">
+        <div class="case-photo"><img src="images/warehouse.jpg" alt="Иллюстрация сценария: консолидация заказа на складе" width="1400" height="854" loading="lazy"><span>Сценарий 02</span></div>
+        <div class="case-body">
+          <span class="case-type">Сборный заказ</span>
+          <h3>Поставка от нескольких фабрик</h3>
+          <dl>
+            <div><dt>Сложность</dt><dd>Синхронизировать разные партии, упаковку и комплекты документов.</dd></div>
+            <div><dt>Контроль</dt><dd>Приёмка по заказам → выборка → консолидация → проверка маркировки.</dd></div>
+            <div><dt>Доказательства</dt><dd>Реестр партий, фото упаковки, упаковочный лист и отчёт о расхождениях.</dd></div>
+          </dl>
+          <p class="case-result"><strong>Критерий результата:</strong> состав, количество и документы каждой партии сверены до экспорта.</p>
+          <p class="case-meta">Сроки: от готовности последней партии · Смета: товар + сервис + склад и доставка</p>
+        </div>
+      </article>
+
+      <article class="case-card reveal">
+        <div class="case-photo"><img src="images/logistics.jpg" alt="Иллюстрация сценария: поставка сырья и комплектующих" width="1400" height="854" loading="lazy"><span>Сценарий 03</span></div>
+        <div class="case-body">
+          <span class="case-type">Сырьё и компоненты</span>
+          <h3>Материалы для производства в РФ</h3>
+          <dl>
+            <div><dt>Сложность</dt><dd>Обеспечить соответствие спецификации и постоянство повторных партий.</dd></div>
+            <div><dt>Контроль</dt><dd>Спецификация → образец → тесты → контроль состава и номера партии.</dd></div>
+            <div><dt>Доказательства</dt><dd>Протоколы, образец, партийные записи и отчёт перед отгрузкой.</dd></div>
+          </dl>
+          <p class="case-result"><strong>Критерий результата:</strong> поставленная партия подтверждена согласованными показателями.</p>
+          <p class="case-meta">Сроки: по графику материалов · Смета: сырьё + сервис + тесты и доставка</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="evidence-strip reveal">
+      <strong>Пакет доказательств на каждый проект</strong>
+      <span>Аудит фабрики</span><span>Фото и видео</span><span>Инспекционный отчёт</span><span>Детальная смета</span><span>Акт приёмки</span>
+    </div>
+    <div class="context-cta reveal"><span>Хотите увидеть состав работ для вашего товара?</span><a href="#inquiry-form" class="btn btn-small btn-gold" data-service="Проектный сценарий и расчёт">Получить расчёт проекта →</a></div>
+  </div>
+</section>
+
+<!-- 5. СТОИМОСТЬ И СТАНДАРТЫ -->
+<section class="section tint" id="commercial">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">04 · Стоимость и показатели</span>
+      <h2>Сначала единый расчёт, затем измеримый контроль</h2>
+      <p>Сравниваем решения по полной стоимости до согласованной точки доставки, а не только по цене фабрики. Все изменения сметы проходят подтверждение.</p>
+    </div>
+
+    <div class="fee-layout">
+      <div class="fee-visual reveal">
+        <svg viewBox="0 0 320 320" role="img" aria-labelledby="fee-title fee-desc">
+          <title id="fee-title">Пример структуры полной стоимости</title>
+          <desc id="fee-desc">Иллюстративный пример: товар 60 процентов, сервис 25 процентов, расходы третьих сторон 15 процентов. Не является тарифом.</desc>
+          <circle cx="160" cy="160" r="120" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="34"/>
+          <circle cx="160" cy="160" r="120" fill="none" stroke="#e1bc6b" stroke-width="34" stroke-dasharray="452 754" transform="rotate(-90 160 160)"/>
+          <circle cx="160" cy="160" r="120" fill="none" stroke="#93b4f6" stroke-width="34" stroke-dasharray="188 754" stroke-dashoffset="-452" transform="rotate(-90 160 160)"/>
+          <circle cx="160" cy="160" r="120" fill="none" stroke="#c2cede" stroke-width="34" stroke-dasharray="113 754" stroke-dashoffset="-640" transform="rotate(-90 160 160)"/>
+          <text x="160" y="148" text-anchor="middle" fill="#f4f7fb" font-size="26" font-weight="700" font-family="Montserrat,sans-serif">ПРИМЕР</text>
+          <text x="160" y="178" text-anchor="middle" fill="#d1d9e5" font-size="16" font-family="Montserrat,sans-serif">структуры затрат</text>
+        </svg>
+        <p>Иллюстративная структура, <strong>не фиксированный тариф</strong>. Фактические доли зависят от товара, объёма и маршрута.</p>
+      </div>
+      <div class="fee-list reveal">
+        <div class="fee-item"><span class="fee-letter gold">A</span><div><h3>Товар или сырьё <b>≈60%</b></h3><p>Цена фабрики по подтверждённой спецификации.</p></div></div>
+        <div class="fee-item"><span class="fee-letter blue">B</span><div><h3>Сервисный сбор <b>≈25%</b></h3><p>Поиск, аудит, образцы, управление заказом и качество.</p></div></div>
+        <div class="fee-item"><span class="fee-letter silver">C</span><div><h3>Расходы третьих сторон <b>≈15%</b></h3><p>Тесты, сертификация, формы, перевозка, страхование и пошлины.</p></div></div>
+        <details class="compact-details"><summary>Правила складского хранения</summary><p>Бесплатный период, начало отсчёта, минимальная единица и тариф после бесплатного периода фиксируются заранее в договоре или складском подтверждении.</p></details>
+      </div>
+    </div>
+
+    <div class="standards-head reveal">
+      <div><span class="mini-kicker">Стандарты обслуживания</span><h3>Что измеряем в проекте</h3></div>
+      <p><strong>Это формулы и нормативы, а не историческая статистика.</strong> Целевые значения согласуются в договоре; фактические значения рассчитываются по завершённым заказам.</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric reveal"><span>OTIF</span><h4>Своевременная и полная доставка</h4><p>Заказы вовремя и в полном объёме ÷ заказы к исполнению.</p><small>Норматив — по договору</small></div>
+      <div class="metric reveal"><span>FPY</span><h4>Прохождение образца с первого раза</h4><p>Проекты, принятые с первой подачи ÷ поданные проекты.</p><small>Норматив — по договору</small></div>
+      <div class="metric reveal"><span>QA</span><h4>Партии, прошедшие контроль</h4><p>Признанные годными партии ÷ проверенные партии.</p><small>Норматив — по договору</small></div>
+      <div class="metric reveal"><span>RSP</span><h4>Реакция на отклонения</h4><p>Отклонения с первым откликом в срок ÷ все отклонения.</p><small>Норматив — по договору</small></div>
+      <div class="metric reveal"><span>COST</span><h4>Отклонение по затратам</h4><p>Разница факта и бюджета ÷ бюджет, с учётом изменений.</p><small>Норматив — по договору</small></div>
+      <div class="metric reveal"><span>SYNC</span><h4>Обновление статуса</h4><p>Заказы с обновлением в срок ÷ заказы, требующие обновления.</p><small>Норматив — по договору</small></div>
+    </div>
+    <div class="inline-cta reveal"><div><span class="mini-kicker">Ваш товар · ваш маршрут · ваша смета</span><h3>Получите расчёт без скрытых категорий расходов</h3></div><a href="#inquiry-form" class="btn btn-gold" data-service="Расчёт стоимости поставки">Получить расчёт проекта →</a></div>
+  </div>
+</section>
+
+<!-- 6. КОМАНДА И СЕТЬ -->
+<section class="section" id="network">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">05 · Команда и сеть</span>
+      <h2>Две страны — одна проектная команда</h2>
+      <p>Китайская команда отвечает за поставку и производство, российская — за клиента, таможенную координацию и локальное исполнение.</p>
+    </div>
+
+    <div class="map-wrap reveal">
+      <div class="map-scroll" tabindex="0" aria-label="Карта сети; на маленьком экране доступна горизонтальная прокрутка">
+        <svg viewBox="0 20 1000 600" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">Сеть POISKCHINA в Китае и России</title>
+          <desc id="map-desc">Россия расположена на севере, Китай — на юге. Все семь городов соединены между собой. Основные коридоры: Шэньчжэнь—Санкт-Петербург, Шанхай—Москва, Шэньян—Екатеринбург.</desc>
+          <defs>
+            <linearGradient id="cn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgba(225,188,107,.22)"/><stop offset="1" stop-color="rgba(225,188,107,.05)"/></linearGradient>
+            <linearGradient id="ru" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgba(147,180,246,.22)"/><stop offset="1" stop-color="rgba(147,180,246,.05)"/></linearGradient>
+          </defs>
+          <path d="M340 100 L360 58 L460 44 L560 40 L680 50 L800 70 L880 110 L900 172 L858 220 L778 250 L700 240 L620 252 L540 236 L460 230 L400 210 L360 178 L340 140 Z" fill="url(#ru)" stroke="rgba(147,180,246,.65)" stroke-width="1.5"/>
+          <path d="M420 340 L470 318 L540 330 L620 338 L720 350 L810 382 L840 442 L800 520 L740 580 L660 610 L580 590 L520 560 L460 520 L430 470 L410 420 L415 380 Z" fill="url(#cn)" stroke="rgba(225,188,107,.65)" stroke-width="1.5"/>
+          <g fill="none" stroke-linecap="round">
+            <g stroke="#e1bc6b" stroke-width="1.2" opacity=".27">
+              <line x1="720" y1="360" x2="390" y2="130"/><line x1="720" y1="360" x2="500" y2="190"/><line x1="720" y1="360" x2="650" y2="160"/>
+              <line x1="790" y1="440" x2="390" y2="130"/><line x1="790" y1="440" x2="500" y2="190"/><line x1="790" y1="440" x2="650" y2="160"/>
+              <line x1="650" y1="520" x2="390" y2="130"/><line x1="650" y1="520" x2="500" y2="190"/><line x1="650" y1="520" x2="650" y2="160"/>
+              <line x1="690" y1="565" x2="390" y2="130"/><line x1="690" y1="565" x2="500" y2="190"/><line x1="690" y1="565" x2="650" y2="160"/>
+            </g>
+            <g stroke="#e1bc6b" stroke-width="1.1" opacity=".18">
+              <line x1="720" y1="360" x2="790" y2="440"/><line x1="720" y1="360" x2="650" y2="520"/><line x1="720" y1="360" x2="690" y2="565"/>
+              <line x1="790" y1="440" x2="650" y2="520"/><line x1="790" y1="440" x2="690" y2="565"/><line x1="650" y1="520" x2="690" y2="565"/>
+            </g>
+            <g stroke="#93b4f6" stroke-width="1.2" opacity=".25"><line x1="390" y1="130" x2="500" y2="190"/><line x1="390" y1="130" x2="650" y2="160"/><line x1="500" y1="190" x2="650" y2="160"/></g>
+            <g stroke="#f5dfa4" stroke-width="2.2" opacity=".75"><line x1="690" y1="565" x2="390" y2="130"/><line x1="790" y1="440" x2="500" y2="190"/><line x1="720" y1="360" x2="650" y2="160"/></g>
+          </g>
+          <g font-family="Montserrat,sans-serif" font-size="16">
+            <circle cx="390" cy="130" r="7" fill="#b6ccfa"/><circle cx="390" cy="130" r="12" fill="none" stroke="#b6ccfa" opacity=".55"/>
+            <text x="368" y="135" fill="#f4f7fb" font-weight="700" text-anchor="end">Санкт-Петербург</text>
+            <circle cx="500" cy="190" r="6" fill="#93b4f6"/><text x="500" y="218" fill="#d1d9e5" text-anchor="middle">Москва</text>
+            <circle cx="650" cy="160" r="6" fill="#93b4f6"/><text x="672" y="165" fill="#d1d9e5">Екатеринбург</text>
+            <text x="610" y="98" fill="#b6ccfa" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">РОССИЯ</text>
+            <circle cx="720" cy="360" r="6" fill="#e1bc6b"/><text x="742" y="365" fill="#d1d9e5">Шэньян</text>
+            <circle cx="790" cy="440" r="6" fill="#e1bc6b"/><text x="812" y="445" fill="#d1d9e5">Шанхай</text>
+            <circle cx="650" cy="520" r="6" fill="#e1bc6b"/><text x="628" y="525" fill="#d1d9e5" text-anchor="end">Гуанчжоу</text>
+            <circle cx="690" cy="565" r="7" fill="#f5dfa4"/><circle cx="690" cy="565" r="12" fill="none" stroke="#f5dfa4" opacity=".55"/>
+            <text x="712" y="571" fill="#f4f7fb" font-weight="700">Шэньчжэнь</text>
+            <text x="580" y="585" fill="#e1bc6b" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">КИТАЙ</text>
+          </g>
+        </svg>
+      </div>
+      <div class="map-legend"><span><i class="ld-cn"></i>Китай · офис и 4 складских узла</span><span><i class="ld-ru"></i>Россия · офис и 3 складских узла</span><span class="map-note">Схема отражает сервисную сеть, не точные географические границы</span></div>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-roles reveal">
+        <span class="mini-kicker">Локальное присутствие</span>
+        <h3>Ответственность по обе стороны границы</h3>
+        <div class="role-row"><span>CN</span><div><h4>Шэньчжэнь · UTC+8</h4><p>Поиск, аудит, образцы, производство, инспекции, консолидация и экспорт.</p></div></div>
+        <div class="role-row"><span>RU</span><div><h4>Санкт-Петербург · UTC+3</h4><p>Коммуникация на русском, договор с клиентом, таможня, склад, доставка и сервис.</p></div></div>
+        <p class="fine-print">Время встреч и рабочие каналы согласуются с проектным менеджером при первом контакте.</p>
+      </div>
+      <div class="people reveal">
+        <article class="person">
+          <div class="person-head"><span class="avatar">V</span><div><h3>Виктория</h3><p>Директор по России</p></div></div>
+          <div class="person-links"><a href="tel:+79819588868">+7 981 958-88-68</a><a href="tel:+79810345678">+7 981 034-56-78</a><a href="mailto:info@poiskchina.com">info@poiskchina.com</a></div>
+          <div class="channel-row"><a class="channel" href="tg://resolve?phone=79819588868" target="_blank" rel="noopener" aria-label="Написать Виктории в Telegram"><b>TG</b>Telegram</a><a class="channel" href="https://wa.me/79819588868?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0." target="_blank" rel="noopener"><b>WA</b>WhatsApp</a></div>
+        </article>
+        <article class="person">
+          <div class="person-head"><span class="avatar">Ц</span><div><h3>Цзян Найсюй</h3><p>Директор по Китаю</p></div></div>
+          <div class="person-links"><a href="tel:+8613538110798">+86 135 3811 0798</a><a href="mailto:jiangnaixu@gmail.com">jiangnaixu@gmail.com</a></div>
+          <div class="channel-row"><button class="channel" type="button" data-copy="+86 135 3811 0798" data-copy-label="Номер для поиска контакта WeChat скопирован"><b>WX</b>WeChat · скопировать номер</button></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. ЗАПУСК ПРОЕКТА -->
+<section class="section contact-section" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">06 · Запуск проекта</span>
+      <h2>Получите расчёт и план первых шагов</h2>
+      <p>Опишите задачу — мы уточним недостающие данные и подготовим объём работ, допущения, ориентиры по срокам и структуру бюджета.</p>
+    </div>
+
+    <div class="inquiry-grid">
+      <div class="prep reveal">
+        <span class="mini-kicker">Для быстрого расчёта</span>
+        <h3>Что подготовить</h3>
+        <ul class="prep-list">
+          <li><span>1</span>Фото, чертёж, образец, ссылку или описание товара</li>
+          <li><span>2</span>Материал, размеры, функции и критерии качества</li>
+          <li><span>3</span>Количество, целевую цену и план повторных заказов</li>
+          <li><span>4</span>Город доставки и желаемый срок</li>
+          <li><span>5</span>Требования к упаковке, маркировке и бренду</li>
+        </ul>
+        <div class="prep-result"><strong>Если данных пока недостаточно</strong><p>Достаточно описать идею. Первая встреча нужна именно для того, чтобы превратить её в проверяемый объём работ.</p></div>
+        <div class="direct-contact"><span>Предпочитаете сразу написать?</span><div><a href="https://wa.me/79819588868" target="_blank" rel="noopener">WhatsApp</a><a href="tg://resolve?phone=79819588868" target="_blank" rel="noopener">Telegram</a><a href="tel:+79819588868">Позвонить</a></div></div>
+      </div>
+
+      <form class="inquiry-form reveal" id="inquiry-form" action="mailto:info@poiskchina.com" method="post" enctype="text/plain">
+        <div class="form-head"><span class="mini-kicker">Короткий запрос</span><h3>Расскажите о заказе</h3><p>4 поля · около 1 минуты</p></div>
+        <div class="form-row">
+          <label>Ваше имя <span aria-hidden="true">*</span><input type="text" name="name" autocomplete="name" required placeholder="Как к вам обращаться"></label>
+          <label>Контакт для ответа <span aria-hidden="true">*</span><input type="text" name="contact" required placeholder="Телефон, email или мессенджер"></label>
+        </div>
+        <label>Что требуется <span aria-hidden="true">*</span>
+          <select name="service" id="serviceSelect" required>
+            <option value="">Выберите тип задачи</option>
+            <option>Кастомизация и доставка продукции</option>
+            <option>Поставка сырья и комплектующих</option>
+            <option>Комплексное управление заказом</option>
+            <option>План контроля качества</option>
+            <option>Расчёт стоимости поставки</option>
+            <option>Другая задача</option>
+          </select>
+        </label>
+        <label>Коротко о заказе<textarea name="message" rows="3" placeholder="Товар, количество, город доставки, желаемый срок"></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required><span>Я согласен(на) на обработку данных для ответа на запрос и ознакомлен(а) с <button type="button" data-open-privacy>политикой конфиденциальности</button>.</span></label>
+        <div class="form-actions"><button type="submit" class="btn btn-gold">Получить расчёт проекта →</button><button type="button" class="btn btn-ghost" id="whatsappSubmit">Отправить в WhatsApp</button></div>
+        <p class="form-note" id="formNote">При отправке по email откроется ваше почтовое приложение с готовым запросом. Сайт не сохраняет введённые данные.</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-main">
+      <div><a href="#top" class="brand"><img src="images/logo.png" alt="" class="brand-logo" width="134" height="160"><span><b>POISKCHINA</b><small>Китай · Россия · Под ключ</small></span></a><p>Производство, контроль качества и поставка из Китая в Россию с единым проектным интерфейсом.</p></div>
+      <div class="foot-links"><a href="#services">Сервис</a><a href="#assurance">Гарантии</a><a href="#cases">Сценарии</a><a href="#commercial">Стоимость</a><a href="#contact">Запуск проекта</a></div>
+      <div class="foot-contact"><a href="mailto:info@poiskchina.com">info@poiskchina.com</a><a href="tel:+79819588868">+7 981 958-88-68</a><a href="https://www.poiskchina.com" target="_blank" rel="noopener">www.poiskchina.com</a></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 POISKCHINA</span><span>FUANG International Trade (Shenzhen) Co., Ltd. · ООО «ВостокСнаб»</span><button type="button" data-open-privacy>Политика конфиденциальности</button></div>
+  </div>
 </footer>
+
+<div class="mobile-cta"><a href="#inquiry-form" class="btn btn-gold">Получить расчёт проекта →</a></div>
+<div class="copy-toast" id="copyToast" role="status" aria-live="polite"></div>
+
+<dialog class="privacy-dialog" id="privacyDialog" aria-labelledby="privacyTitle">
+  <div class="dialog-head"><h2 id="privacyTitle">Политика конфиденциальности</h2><button type="button" id="privacyClose" aria-label="Закрыть">×</button></div>
+  <div class="dialog-body">
+    <p><strong>Операторы:</strong> FUANG International Trade (Shenzhen) Co., Ltd. и ООО «ВостокСнаб» (далее — POISKCHINA).</p>
+    <h3>Как работает форма</h3>
+    <p>Форма работает локально в браузере и не отправляет данные на сервер сайта. При выборе email открывается ваше почтовое приложение; при выборе WhatsApp — сервис WhatsApp с подготовленным текстом. Отправка происходит только после вашего подтверждения в выбранном приложении.</p>
+    <h3>Какие данные обрабатываются</h3>
+    <p>Если вы отправляете запрос, мы получаем имя, указанный контакт, тип задачи и сведения о заказе. Данные используются только для ответа, подготовки расчёта, договорной работы и связанной проектной коммуникации.</p>
+    <h3>Хранение и права</h3>
+    <p>Срок хранения зависит от договорных и законодательных требований. Вы можете запросить уточнение или удаление данных, а также отозвать согласие, написав на <a href="mailto:info@poiskchina.com">info@poiskchina.com</a>.</p>
+    <p class="fine-print">При переходе в WhatsApp, Telegram или почтовое приложение также действуют правила соответствующего сервиса. Не отправляйте через форму платёжные данные, пароли или иные чувствительные сведения.</p>
+  </div>
+</dialog>
 
 <script src="main.js"></script>
 </body>
